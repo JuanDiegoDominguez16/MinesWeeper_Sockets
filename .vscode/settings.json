@@ -1,16 +1,9 @@
 {
-  // La raiz de paquetes es src/main/java. Sin esto el servidor de Java
-  // cree que la raiz es la carpeta del propio archivo y marca
-  // "declared package does not match the expected package" en todos.
-  "java.project.sourcePaths": [
-    "src/main/java"
-  ],
+  // Proyecto Maven: la estructura (src/main/java -> target/classes) y el
+  // nivel de Java salen del pom.xml, no hace falta configurarlos aqui.
 
-  "java.project.outputPath": "bin",
-
-  // Sin esto el proyecto se compila con nivel de fuente Java 1.8
-  // (el unico Java instalado en el sistema es un JRE 8) y fallan
-  // los record y el "instanceof Message message", que piden Java 16+.
+  // El unico Java del PATH es un JRE 8, asi que hay que apuntar al JDK 21
+  // que trae la extension de Java de VS Code.
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-21",
@@ -19,5 +12,6 @@
     }
   ],
 
-  "java.configuration.updateBuildConfiguration": "automatic"
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "maven.terminal.useJavaHome": true
 }

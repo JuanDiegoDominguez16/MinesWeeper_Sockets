@@ -6,14 +6,15 @@
       "name": "Minesweeper Server",
       "request": "launch",
       "mainClass": "minesweeper.server.Server",
-      "projectName": "MinesWeeper_Sockets"
+      "projectName": "minesweeper-sockets",
+      "console": "integratedTerminal"
     },
     {
       "type": "java",
       "name": "Minesweeper Client",
       "request": "launch",
       "mainClass": "minesweeper.client.Client",
-      "projectName": "MinesWeeper_Sockets",
+      "projectName": "minesweeper-sockets",
       "console": "integratedTerminal"
     }
   ]
