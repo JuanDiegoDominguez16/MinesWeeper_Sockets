@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Minesweeper Server",
+      "request": "launch",
+      "mainClass": "minesweeper.server.Server",
+      "projectName": "MinesWeeper_Sockets"
+    },
+    {
+      "type": "java",
+      "name": "Minesweeper Client",
+      "request": "launch",
+      "mainClass": "minesweeper.client.Client",
+      "projectName": "MinesWeeper_Sockets",
+      "console": "integratedTerminal"
+    }
+  ]
+}

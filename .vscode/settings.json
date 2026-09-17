@@ -1,0 +1,23 @@
+{
+  // La raiz de paquetes es src/main/java. Sin esto el servidor de Java
+  // cree que la raiz es la carpeta del propio archivo y marca
+  // "declared package does not match the expected package" en todos.
+  "java.project.sourcePaths": [
+    "src/main/java"
+  ],
+
+  "java.project.outputPath": "bin",
+
+  // Sin esto el proyecto se compila con nivel de fuente Java 1.8
+  // (el unico Java instalado en el sistema es un JRE 8) y fallan
+  // los record y el "instanceof Message message", que piden Java 16+.
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "C:/Users/JD/.vscode/extensions/redhat.java-1.56.0-win32-x64/jre/21.0.12.1-win32-x86_64",
+      "default": true
+    }
+  ],
+
+  "java.configuration.updateBuildConfiguration": "automatic"
+}
